@@ -8,13 +8,16 @@ win.title(
 win.geometry(f"{W}x{H}")
 win.resizable(0, 0)
 
-win.configure(bg = COLOR_1)
+
 
 button_1 = tk.Button(text="ЖМИ", bg=COLOR_3, fg=COLOR_4)
 button_1.grid(row=1, column=3, sticky="we")
 
 label_1 = tk.Label(text="текст", bg=COLOR_1, fg=COLOR_4)
 label_1.grid(row=0, column=2, sticky="wens")
+
+entry_1 = tk.Entry()
+entry_1.grid(row=1, column=1, sticky="we", columnspan=2)
 
 entry_1 = tk.Entry()
 entry_1.grid(row=1, column=1, sticky="we", columnspan=2)
